@@ -48,7 +48,7 @@
 
 #grad1 {
 	background-color: #000; /* For browsers that do not support gradients */        
-	background-image: linear-gradient(110deg, #5FB627 0%, #4CB126 51%, #32A925 75%);
+	background-image: linear-gradient(to right top, #02fdfd, #00f9e1, #00f3c0, #3cec9a, #62e372);
 	color:white;
   opacity:0.95;
 }
