@@ -1,8 +1,18 @@
-/* This is the CSS */
+/* Setup the structure */
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /*
   This section sets up mobile responsiveness
 */
+
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
