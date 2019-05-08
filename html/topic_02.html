@@ -49,7 +49,7 @@
             placeholder="Ex. 24"
          />
          <br />
-         <button onclick="createPerson(); sendWelcomeMessge()">
+         <button onclick="createPerson(); sendWelcomeMessage()">
             Welcome me!
          </button>
       </div>
@@ -68,9 +68,9 @@
             return new Person(fn, mi, ln, age);
          }
 
-         const p = createPerson();
+         function sendWelcomeMessage() {
+            const p = createPerson();
 
-         function sendWelcomeMessge() {
             let welcomeMessage = p.welcomeMessage;
             // log the welcome message
             console.log(`${welcomeMessage}`);
