@@ -71,9 +71,9 @@
          function sendWelcomeMessage() {
             const p = createPerson();
 
-            let welcomeMessage = p.welcomeMessage;
+            let welcome_Message = p.welcomeMessage();
             // log the welcome message
-            console.log(`${welcomeMessage}`);
+            console.log(`${welcome_Message}`);
             // change the welcome header
             document.getElementById("welcome-h").innerHTML = welcomeMessage;
          }
