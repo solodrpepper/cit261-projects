@@ -11,7 +11,6 @@ class Person {
     this._lastName      = lastName;
     this._age           = age;
   }
-
 }
 
 // this method will return the Users whole name
@@ -24,6 +23,6 @@ Person.prototype.createWholeName = function() {
 // This will be a welcome message used for welcoming users
 Person.prototype.welcomeMessage = function() {
   const wholeName = createWholeName();
-  const welcomeMessage = (`Welcome, ${wholeName}!`);
-  return welcomeMessage;
+  const welcome_Message = (`Welcome, ${wholeName}!`);
+  return welcome_Message;
 }
