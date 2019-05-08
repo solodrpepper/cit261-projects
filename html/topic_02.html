@@ -16,13 +16,17 @@
             ln = document.getElementById("last-name").value;
             age = document.getElementById("age").value;
 
-            return person = new Person(fn, mi, ln, age);
+            console.log(`${fn}, ${mi}, ${ln}, ${age}`);
+
+            return new Person(fn, mi, ln, age);
          }
 
          const p = createPerson(fn, mi, ln, age);
 
          function sendWelcomeMessge() {
             let welcomeMessage = p.welcomeMessage;
+            // log the welcome message
+            console.log(`${welcomeMessage}`);
             // change the welcome header
             document.getElementById("welcome-h").innerHTML = welcomeMessage;
          }
