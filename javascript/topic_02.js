@@ -22,7 +22,8 @@ class Person {
   // This will be a welcome message used for welcoming users
   welcomeMessage() {
     const wholeName = createWholeName();
-    return (`Welcome, ${wholeName}!`);
+    const welcomeMessage = (`Welcome, ${wholeName}!`);
+    return welcomeMessage;
   }
 
 
