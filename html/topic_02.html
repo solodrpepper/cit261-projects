@@ -6,31 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
       <!-- Make sure to include the Script for topic #2 -->
-      <script src="../javascript/topic_02.js">
-
-         // to create our new user "person"
-         function createPerson() {
-            // get all the input values
-            fn = document.getElementById("first-name").value;
-            mi = document.getElementById("middle-initial").value;
-            ln = document.getElementById("last-name").value;
-            age = document.getElementById("age").value;
-
-            console.log(`${fn}, ${mi}, ${ln}, ${age}`);
-
-            return new Person(fn, mi, ln, age);
-         }
-
-         const p = createPerson();
-
-         function sendWelcomeMessge() {
-            let welcomeMessage = p.welcomeMessage;
-            // log the welcome message
-            console.log(`${welcomeMessage}`);
-            // change the welcome header
-            document.getElementById("welcome-h").innerHTML = welcomeMessage;
-         }
-      </script>
+      <script src="../javascript/topic_02.js"></script>
 
       <title>Fluency Topic #2</title>
    </head>
@@ -73,9 +49,34 @@
             placeholder="Ex. 24"
          />
          <br />
-         <button onclick="sendWelcomeMessge()">
+         <button onclick="createPerson(); sendWelcomeMessge()">
             Welcome me!
          </button>
       </div>
+
+      <script>
+         // to create our new user "person"
+         function createPerson() {
+            // get all the input values
+            fn = document.getElementById("first-name").value;
+            mi = document.getElementById("middle-initial").value;
+            ln = document.getElementById("last-name").value;
+            age = document.getElementById("age").value;
+
+            console.log(`${fn}, ${mi}, ${ln}, ${age}`);
+
+            return new Person(fn, mi, ln, age);
+         }
+
+         const p = createPerson();
+
+         function sendWelcomeMessge() {
+            let welcomeMessage = p.welcomeMessage;
+            // log the welcome message
+            console.log(`${welcomeMessage}`);
+            // change the welcome header
+            document.getElementById("welcome-h").innerHTML = welcomeMessage;
+         }
+      </script>
    </body>
 </html>
