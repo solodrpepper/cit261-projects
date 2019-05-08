@@ -10,18 +10,19 @@ class Person {
     this._middleInitial = middleInitial;
     this._lastName      = lastName;
     this._age           = age;
-    this._wholeName     = createWholeName();
   }
 
   // this method will return the Users whole name
   createWholeName() {
     let mid = !this._middleInitial ? `` : this._middleInitial;
-    return (`${this._firstName} ${mid}. ${this._lastName}`);
+    this._wholeName = (`${this._firstName} ${mid}. ${this._lastName}`);
+    return this._wholeName;
   }
 
   // This will be a welcome message used for welcoming users
   welcomeMessage() {
-    return (`Welcome, ${this._wholeName}!`);
+    const wholeName = createWholeName();
+    return (`Welcome, ${wholeName}!`);
   }
 
 
