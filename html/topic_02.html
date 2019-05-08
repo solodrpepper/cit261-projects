@@ -22,14 +22,16 @@
          const p = createPerson(fn, mi, ln, age);
 
          function sendWelcomeMessge() {
-            p.welcomeMessage;
+            let welcomeMessage = p.welcomeMessage;
+            // change the welcome header
+            document.getElementById("welcome-h").innerHTML = welcomeMessage;
          }
       </script>
 
       <title>Fluency Topic #2</title>
    </head>
    <body>
-      <h1>Welcome to Topic Number Two!</h1>
+      <h1 id="welcome-h">Welcome to Topic Number Two!</h1>
       <div id="name-form">
          <label for="first-name">First Name:</label>
          <input
