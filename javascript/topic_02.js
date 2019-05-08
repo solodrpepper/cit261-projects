@@ -12,19 +12,18 @@ class Person {
     this._age           = age;
   }
 
-  // this method will return the Users whole name
-  createWholeName() {
-    let mid = !this._middleInitial ? `` : this._middleInitial;
-    this._wholeName = (`${this._firstName} ${mid}. ${this._lastName}`);
-    return this._wholeName;
-  }
+}
 
-  // This will be a welcome message used for welcoming users
-  welcomeMessage() {
-    const wholeName = createWholeName();
-    const welcomeMessage = (`Welcome, ${wholeName}!`);
-    return welcomeMessage;
-  }
+// this method will return the Users whole name
+Person.prototype.createWholeName = function() {
+  let mid = !this._middleInitial ? `` : this._middleInitial;
+  this._wholeName = (`${this._firstName} ${mid}. ${this._lastName}`);
+  return this._wholeName;
+}
 
-
+// This will be a welcome message used for welcoming users
+Person.prototype.welcomeMessage = function() {
+  const wholeName = createWholeName();
+  const welcomeMessage = (`Welcome, ${wholeName}!`);
+  return welcomeMessage;
 }
