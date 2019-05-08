@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fluency Topic #2</title>
-</head>
-<body>
-  <h1>Welcome to Topic Number Two!</h1>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+      <!-- Make sure to include the Script for topic #2 -->
+      <script src="../javascript/topic_02.js"></script>
+
+      <title>Fluency Topic #2</title>
+   </head>
+   <body>
+      <h1>Welcome to Topic Number Two!</h1>
+      <div id="name-form">
+         <label for="first-name">First Name:</label>
+         <input
+            type="text"
+            id="first-name"
+            name="fn"
+            maxlength="12"
+            placeholder="Ex. John"
+         />
+         <br />
+         <label for="middle-initial">Middle Initial:</label>
+         <input
+            type="text"
+            id="middle-initial"
+            name="mi"
+            maxlength="1"
+            placeholder="Ex. W"
+         />
+         <br />
+         <label for="first-name">Last Name:</label>
+         <input
+            type="text"
+            id="last-name"
+            name="ln"
+            maxlength="12"
+            placeholder="Ex. Smith"
+         />
+         <br />
+         <button onclick="person.welcomeMessage()">Welcome me!</button>
+      </div>
+   </body>
 </html>
