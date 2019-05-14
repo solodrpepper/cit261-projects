@@ -27,39 +27,93 @@ header {
    overflow: none;
 }
 
-/*
-  For my footer
-*/
-.footer {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   padding: 1rem;
-   background-color: #555;
-   text-align: center;
-   color: white;
-}
-
-/*
-  This section sets up mobile responsiveness
-*/
+/************************************************
+ *  This section sets up mobile responsiveness
+ */
 
 .grid {
    width: 90%;
-   margin: 0 auto;
+   margin: 1em auto;
+   overflow: none;
    display: grid;
-   grid-template-columns: 1fr;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 1em;
+   grid-template-areas: 
+      "for-explanation for-loop-demo"
+      "while-loop-demo while-explanation"
+      "do-explanation do-loop-demo"
+      "in-loop-demo in-explanation"
+      "forof-explanation for-of-demo"
+      "each-loop-demo each-explanation";
+
+}
+
+/* This is for the For Loop */
+.for-explanation {
+   grid-area: for-explanation;
+}
+
+.for-loop-demo {
+   grid-area: for-loop-demo;
+}
+
+/* This is for the While Loop */
+.while-explanation {
+   grid-area: while-explanation;
+}
+
+.while-loop-demo {
+   grid-area: while-loop-demo;
+}
+
+/* This is for the Do/while Loop */
+.do-explanation {
+   grid-area: do-explanation;
+}
+
+.do-loop-demo {
+   grid-area: do-loop-demo;
+}
+
+/* This is for the For In */
+.in-explanation {
+   grid-area: in-explanation;
+}
+
+.for-in-demo {
+   grid-area: in-loop-demo;
+}
+
+/* This is for the For Of */
+.forof-explanation {
+   grid-area: forof-explanation;
+}
+
+.for-of-demo {
+   grid-area: for-of-demo;
+}
+
+/* This is for the For Each */
+.each-explanation {
+   grid-area: each-explanation;
+}
+
+.for-each-demo {
+   grid-area: each-loop-demo;
+}
+
+.mini-grid {
+   overflow: none;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   align-items: center;
+   justify-items: center;
    grid-gap: 1em;
 }
 
-.grid > div {
-   padding: 1em;
-}
-
-/*
-  For a nice pretty background
-*/
+/************************************************
+ *  For a nice pretty background
+ */
 
 #grad1 {
    background-color: #000; /* For browsers that do not support gradients */
@@ -83,21 +137,13 @@ header {
 
 /* Make the form look like it's floating */
 .card {
-   width: 100%;
+   width: fit-content;
    height: auto;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    text-align: left;
-   margin: auto;
-   margin-left: 10px;
-   margin-right: 10px;
-   margin-bottom: 10px;
-   margin-top: 10px;
    background-color: white;
    overflow: hidden;
-   padding-left: 20px;
-   padding-right: 20px;
-   padding-top: 20px;
-   padding-bottom: 20px;
+   padding: 1em;
    color: black;
 }
 
@@ -159,8 +205,7 @@ textarea:focus {
    text-decoration: none;
    display: inline-block;
    font-size: 16px;
-   margin-right: 10px;
-   margin-top: 10px;
+   margin: 5px;
 }
 
 .button:hover {
@@ -184,3 +229,20 @@ label {
 h1.main-header {
    text-shadow: 3px 3px 3px #69747c;
 }
+
+/*
+   This section contains styling for my tables
+*/
+/* for a cool looking table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}

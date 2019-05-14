@@ -1,16 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-   <!-- Stylesheet-->
-   <link rel="stylesheet" type="text/css" href="../css/main.css">
+      <!-- Stylesheet-->
+      <link rel="stylesheet" type="text/css" href="../css/topic_01.css" />
+      <script src="../javascript/topic_01.js"></script>
 
-   <title>Fluency Topic #1</title>
-</head>
-<body>
-   <header>Fluency Topic #1</header>
-</body>
+      <title>Fluency Topic #1</title>
+   </head>
+   <body id="grad1">
+      <header>Fluency Topic #1</header>
+      <div id="main-container" class="grid">
+         <!-- For loop section -->
+         <div class="for-loop-demo card rounded_border">
+            Click the Button to see it in action
+            <br /><br />
+            <div id="for-loop-test" class="mini-grid"></div>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="forLoopTest()"
+            >
+               Loop it!
+            </button>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="clearCell('for-loop-test')"
+            >
+               Clear Section
+            </button>
+         </div>
+         <div
+            id="for-loop-explanation"
+            class="for-explanation card rounded_border"
+         >
+            <h3>For Loop</h3>
+            <p>
+               The "For Loop" is probably one of the most common loops used in
+               programming. It's typically used when we know exatly how many
+               time we need to run the loop.
+            </p>
+         </div>
+
+         <!-- While loop section -->
+         <div
+            id="while-loop-explanation"
+            class="while-explanation card rounded_border"
+         >
+            <h3>While Loop</h3>
+            <p>
+               The while loop is great for when we don't know how many times we
+               need to the loop to run. With this uncertainty, we still make
+               sure to add a conditional statement to insure that it doesn't run
+               forever.
+            </p>
+         </div>
+         <div id="while-loop-demo" class="card rounded_border">
+            <p>
+               Go ahead and input a starting number and end condition, or use
+               the defaults and click to watch
+            </p>
+            <input
+               type="number"
+               min="0"
+               max="499"
+               id="start_num"
+               placeholder="Starting Number"
+            />
+            <input
+               type="number"
+               min="1"
+               max="500"
+               id="end_condition"
+               placeholder="Number of Times to Loop"
+            />
+            <div id="while-loop-test" class="mini-grid"></div>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="whileLoopTest()"
+            >
+               Loop it!
+            </button>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="clearCell('while-loop-test')"
+            >
+               Clear Section
+            </button>
+         </div>
+
+         <!-- Do/while loop section -->
+         <div id="do-loop-demo" class="card rounded_border">
+            <p>
+               Put in an end condition to see it run. Notice that even when zero
+               is used, it will still run at least once.
+            </p>
+            <input
+               type="number"
+               min="0"
+               max="100"
+               id="do_end_condition"
+               placeholder="Try 0!"
+            /><br />
+            <div id="do-loop-test" class="mini-grid"></div>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="doLoopTest()"
+            >
+               Loop it!
+            </button>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="clearCell('do-loop-test')"
+            >
+               Clear Section
+            </button>
+         </div>
+         <div
+            id="do-loop-explanation"
+            class="do-explanation card rounded_border"
+         >
+            <h3>Do Loop</h3>
+            <p>
+               The "Do Loop", or the "Do/While Loop" is similar to the "While
+               Loop" except for the fact that a "Do Loop" will always run at
+               least one time.
+            </p>
+         </div>
+
+         <!-- For in section -->
+         <div
+            id="for-in-explanation"
+            class="in-explanation card rounded_border"
+         >
+            <h3>For In Loop</h3>
+            <p>
+               The "For In Loop" has the abiility to loop through all of the
+               properties of an object.
+            </p>
+         </div>
+         <div id="for-in-demo" class="card rounded_border">
+            <p>Click the button to see how it works</p>
+            <pre>
+Car = {"make" : "Honda",
+       "model" : "Civic",
+       "bodyType" : "sedan",
+       "modelDate" : 2010}
+            </pre>
+            <div id="for-in-test"></div>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="forInLoopTest()"
+            >
+               Loop it!
+            </button>
+            <br />
+            <button
+               type="button"
+               class="button rounded_border"
+               onclick="clearCell('for-in-test')"
+            >
+               Clear Section
+            </button>
+         </div>
+
+         <!-- For of section -->
+         <div id="for-of-test" class="for-of-demo card rounded_border"></div>
+         <div
+            id="for-of-explanation"
+            class="forof-explanation card rounded_border"
+         >
+            <h3>For Of Loop</h3>
+         </div>
+
+         <!-- For each section -->
+         <div
+            id="for-each-explanation"
+            class="each-explanation card rounded_border"
+         >
+            <h3>For Each Loop</h3>
+         </div>
+         <div
+            id="for-each-test"
+            class="for-each-demo card rounded_border"
+         ></div>
+      </div>
+   </body>
 </html>
