@@ -137,7 +137,7 @@ header {
 
 /* Make the form look like it's floating */
 .card {
-   width: fit-content;
+   width: 1fr;
    height: auto;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    text-align: left;
