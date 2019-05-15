@@ -121,7 +121,7 @@ window.onload = function() {
       lsOutput.innerHTML += `${key}: ${data}<br />`;
    }
 
-   for (let i = 0; i < sessionStorage.length - 1; i++) {
+   for (let i = 0; i < sessionStorage.length; i++) {
       const key = sessionStorage.key(i);
       const data = sessionStorage.getItem(key);
 
