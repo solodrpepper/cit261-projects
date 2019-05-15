@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+      <!-- Stylesheet-->
+      <link rel="stylesheet" type="text/css" href="../css/topic_05.css" />
+
+      <title>Topic #5</title>
+   </head>
+   <body id="grad1">
+      <header>Fluency Topic #5</header>
+      <div class="grid card rounded_border">
+         <fieldset class="input-fields">
+            <legend>Insert Data</legend>
+            <input id="inputKey" type="text" placeholder="Enter Key..." />
+            <input id="inputData" type="text" placeholder="Enter Data..." />
+            <button
+               type="button"
+               class="button rounded_border"
+               id="btnInsert"
+               onclick="saveStorage()"
+            >
+               Insert Data
+            </button>
+         </fieldset>
+         <fieldset>
+            <legend>Local Storage</legend>
+            <div id="lsOutput"></div>
+         </fieldset>
+         <fieldset>
+            <legend>Session Storage</legend>
+            <div id="ssOutput"></div>
+         </fieldset>
+         <button
+            type="button"
+            class="button rounded_border"
+            id="btnClearAllStorage"
+            onclick="clearStorage()"
+         >
+            Clear Storage
+         </button>
+      </div>
+      <!-- Make sure to include the Script for topic #5 -->
+      <script src="../javascript/topic_05.js"></script>
+   </body>
+</html>
