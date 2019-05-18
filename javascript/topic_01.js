@@ -118,5 +118,76 @@ function forInLoopTest() {
 
 // for of loop test example
 function forOfLoopTest() {
+   // get the input fields
+   const modifier = parseInt(document.getElementById('modify').value);
+   const operator = document.getElementById('operator').value;
+
+   // console log the variables
+   console.log(`Modifier: ${modifier}, Operator: ${operator}`);
+
    // create an array to iterate through
+   let arr = [];
+   // simple for loop to fill the array
+   for (let i = 0; i < 64; i++) {
+      arr[i] = i;
+   }
+
+   // create iterator
+   let item;
+
+   // create string to hold new content
+   finalText = '';
+
+   // use a switch statement to handle the operators
+   switch (operator) {
+      case '+':
+         for (item of arr) {
+            item += modifier;
+            finalText += `<div class='item'>${item}</div>`;
+         }
+         break;
+      case '-':
+         for (item of arr) {
+            item -= modifier;
+            finalText += `<div class='item'>${item}</div>`;
+         }
+         break;
+      case '*':
+         for (item of arr) {
+            item *= modifier;
+            finalText += `<div class='item'>${item}</div>`;
+         }
+         break;
+      case '/':
+         for (item of arr) {
+            item /= modifier;
+            finalText += `<div class='item'>${item}</div>`;
+         }
+         break;
+      case '%':
+         for (item of arr) {
+            item %= modifier;
+            finalText += `<div class='item'>${item}</div>`;
+         }
+         break;
+      default:
+         break;
+   }
+   // debugging
+   console.log(arr);
+   document.getElementById('for-of-test').innerHTML = finalText;
 }
+
+function forOfLoader() {
+   // create an array to iterate through
+   let arr = '';
+   // simple for loop to fill the array
+   for (let i = 0; i < 64; i++) {
+      arr += `<div class='item'>${i}</div>`;
+   }
+   document.getElementById('for-of-test').innerHTML = arr;
+}
+
+window.onload = function() {
+   forOfLoader();
+};
