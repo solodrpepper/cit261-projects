@@ -4,7 +4,38 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Fluency Topic #3&4</title>
+      <title>Fluency Topic 3 & 4</title>
+
+      <!-- Stylesheet-->
+      <link rel="stylesheet" type="text/css" href="../css/topic_03.css" />
    </head>
-   <body></body>
+   <body id="grad1">
+      <div id="searchContainer">
+         <input
+            class="searchControl"
+            type="text"
+            placeholder="City Name or Zip"
+            id="searchInput"
+         />
+         <button id="searchBtn" class="button rounded_border searchControl">
+            Search
+         </button>
+      </div>
+
+      <div id="weatherContainer" class="rounded_border">
+         <div id="weatherDescription">
+            <h1 id="cityHeader"></h1>
+            <div id="weatherMain">
+               <div id="temperature"></div>
+               <div id="weatherDescriptionHeader"></div>
+               <div><img id="docIconImg" /></div>
+            </div>
+            <hr />
+            <div id="windSpeed" class="bottomDetails"></div>
+            <div id="humidity" class="bottomDetails"></div>
+         </div>
+      </div>
+      <!-- Make sure to include the Script for topic #5 -->
+      <script src="../javascript/topic_03.js"></script>
+   </body>
 </html>
