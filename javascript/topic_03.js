@@ -96,8 +96,8 @@ window.addEventListener('load', () => {
 
    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
-         long = position.coords.longitude;
-         lat = position.coords.latitude;
+         long = Math.floor(position.coords.longitude);
+         lat = Math.floor(position.coords.latitude);
 
          // now grab the weather in their area
          //Create the XHR Object
@@ -105,7 +105,7 @@ window.addEventListener('load', () => {
          //Call the open function, GET-type of request, url, true-asynchronous
          xhr.open(
             'GET',
-            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&long=${long}&APPID=${appId}&units=${units}`,
+            `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&APPID=${appId}&units=${units}`,
             true
          );
          //call the onload
