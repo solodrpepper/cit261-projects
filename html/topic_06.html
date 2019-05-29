@@ -12,47 +12,63 @@
    </head>
    <body id="grad1">
       <header>Fluency Topic #6</header>
-      <div id="controlContainer" class="grid">
-         <!-- For element creation -->
-         <div id="addElementBox" class="card rounded_border">
-            <input type="text" id="elementItem" />
-            <button id="createBtn" class="button rounded_border">Create</button>
+      <header id="main-header">
+         <div>
+            <h2 id="header-title">Item Lister</h2>
+            <input type="text" id="filter" placeholder="Search Items..." />
          </div>
-         <!-- Stuff We can move around -->
-         <div id="editable" class="card rounded_border">
-            <div>
-               <table>
-                  <tr>
-                     <td class="listItem" id="item1">Item 1</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item2">Item 3</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item3">Item 2</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item4">Item 4</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item5">Item 5</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item6">Item 6</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item7">Item 7</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item8">Item 8</td>
-                  </tr>
-                  <tr>
-                     <td class="listItem" id="item9">Item 9</td>
-                  </tr>
-               </table>
-            </div>
+      </header>
+      <div class="grid">
+         <div class="card rounded_border">
+            <h2 class="title">Add Items</h2>
+            <input type="text" id="item" />
+            <select name="placement" id="placementSelect">
+               <option value="default">Defualt</option>
+               <option value="before">Insert before</option>
+               <option value="after">Insert after</option>
+               <option value="edit">Edit</option>
+            </select>
+            <p id="itemReference"></p>
+            <br />
+            <br />
+            <input
+               id="addForm"
+               type="button"
+               class="button rounded_border"
+               value="Add"
+            />
+         </div>
+         <div class="card rounded_border">
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+               <li id="0" class="list-group-item">
+                  Item 1
+                  <button class="delete-button rounded_border">
+                     X
+                  </button>
+               </li>
+               <li id="1" class="list-group-item">
+                  Item 2
+                  <button class="delete-button rounded_border">
+                     X
+                  </button>
+               </li>
+               <li id="2" class="list-group-item">
+                  Item 3
+                  <button class="delete-button rounded_border">
+                     X
+                  </button>
+               </li>
+               <li id="3" class="list-group-item">
+                  Item 4
+                  <button class="delete-button rounded_border">
+                     X
+                  </button>
+               </li>
+            </ul>
          </div>
       </div>
+
       <script src="../javascript/topic_06.js"></script>
    </body>
 </html>
