@@ -101,7 +101,7 @@ function doLoopTest() {
 
 // the for in loop test function
 function forInLoopTest() {
-   // create the car object in the example
+   // create the associative array in the example
    car = { make: 'Honda', model: 'Civic', bodyType: 'sedan', modelDate: 2010 };
 
    let finalText = `<table>Car Object<th>Property</th><th>Value</th>`;
