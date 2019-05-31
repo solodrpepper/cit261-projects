@@ -21,18 +21,23 @@
             Search
          </button>
       </div>
-
-      <div id="weatherContainer" class="rounded_border">
-         <div id="weatherDescription">
-            <h1 id="cityHeader"></h1>
-            <div id="weatherMain">
-               <div id="temperature"></div>
-               <div id="weatherDescriptionHeader"></div>
-               <div><img id="docIconImg" /></div>
+      <div class="grid">
+         <div id="weatherContainer" class="rounded_border">
+            <div id="weatherDescription">
+               <h1 id="cityHeader"></h1>
+               <div id="weatherMain">
+                  <div id="temperature"></div>
+                  <div id="weatherDescriptionHeader"></div>
+                  <div><img id="docIconImg" /></div>
+               </div>
+               <hr />
+               <div id="windSpeed" class="bottomDetails"></div>
+               <div id="humidity" class="bottomDetails"></div>
             </div>
-            <hr />
-            <div id="windSpeed" class="bottomDetails"></div>
-            <div id="humidity" class="bottomDetails"></div>
+         </div>
+         <div class="card rounded_border" id="jsonStringify">
+            <h3>Stringified Data</h3>
+            <p id="stringified"></p>
          </div>
       </div>
       <!-- Make sure to include the Script for topic #5 -->

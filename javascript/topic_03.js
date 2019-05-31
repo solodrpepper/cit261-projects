@@ -58,6 +58,12 @@ function init(resultFromAPI) {
    humidityElement.innerHTML =
       'Humidity levels at ' + resultFromAPI.main.humidity + '%';
 
+   // display stringified version
+   document.getElementById('stringified').innerHTML = JSON.stringify(
+      resultFromAPI
+   );
+   document.getElementById('jsonStringify').style.visibility = 'visible';
+
    setPosition();
 }
 
