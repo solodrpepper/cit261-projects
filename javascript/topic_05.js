@@ -128,3 +128,9 @@ window.onload = function() {
       ssOutput.innerHTML += `${key}: ${data}<br />`;
    }
 };
+
+window.addEventListener('load', grabLocalStorage);
+
+function grabLocalStorage() {
+   // do stuff here
+}

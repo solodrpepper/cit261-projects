@@ -23,7 +23,9 @@
             Storage". Also, don't enter in ANY sensitive information!
          </p>
       </div>
+      <!-- Simple string section -->
       <div class="grid card rounded_border">
+         <h3>Simple Data Section</h3>
          <fieldset class="input-fields">
             <legend>Insert Data</legend>
             <input id="inputKey" type="text" placeholder="Enter Key..." />
@@ -47,12 +49,51 @@
          </fieldset>
          <button
             type="button"
-            class="button rounded_border"
+            class="button rounded_border clear_button"
             id="btnClearAllStorage"
             onclick="clearStorage()"
          >
             Clear Storage
          </button>
+      </div>
+      <!-- Array Section -->
+      <div class="grid card rounded_border">
+         <h3>Array Section</h3>
+
+         <fieldset>
+            <legend>Local Storage</legend>
+            <div id="lsOutput"></div>
+         </fieldset>
+         <p>
+            This section will automatically display an array from the Local
+            Storage
+         </p>
+      </div>
+      <!-- Object Section -->
+      <div class="grid card rounded_border">
+         <h3>Object Section</h3>
+
+         <fieldset>
+            <legend>Local Storage</legend>
+            <div id="lsOutput"></div>
+         </fieldset>
+         <p>
+            This section will automatically display an object from the Local
+            Storage
+         </p>
+      </div>
+      <!-- "Associative Array" Section (Literally identical to the Object section -->
+      <div class="grid card rounded_border">
+         <h3>Associative Array Section</h3>
+
+         <fieldset>
+            <legend>Local Storage</legend>
+            <div id="lsOutput"></div>
+         </fieldset>
+         <p>
+            This section will automatically display an associative array from
+            the Local Storage
+         </p>
       </div>
       <!-- Make sure to include the Script for topic #5 -->
       <script src="../javascript/topic_05.js"></script>

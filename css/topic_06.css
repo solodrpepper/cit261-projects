@@ -190,29 +190,3 @@ ul li {
 }
 
 tr:hover {background-color:#dddddd;}
-
-.input-fields {
-   grid-column: 1/3;
-}
-
-.listItem {
-   padding-left: 0;
-   -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
-   transition: padding 0.5s;
-}
-
-.delete-button {
-   background-color: rgb(250, 64, 64);
-   border: none;
-   color: white;
-   padding: 2px 2px;
-   text-align: center;
-   text-decoration: none;
-   font-size: 16px;
-   float: right;
-   align-self: right;
-}
-
-#header-title {
-   text-align: left;
-}
