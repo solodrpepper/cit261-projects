@@ -25,25 +25,21 @@ div3BtnShrink.addEventListener('click', shrink);
 // change the background color of a div
 function changeBG(e) {
    let clr = document.getElementById('div1Input').value;
-   e.target.parentNode.style.transition = 'background 1.0s linear 0s';
    e.target.parentNode.style.backgroundColor = clr;
 }
 
 // fade out a div
 function fadeOut(e) {
-   e.target.parentNode.style.transition = 'opacity 0.5s linear 0s';
    e.target.parentNode.style.opacity = 0;
 }
 
 // create a grow function
 function grow(e) {
-   e.target.parentNode.style.transition = 'height 0.5s linear 0s';
    e.target.parentNode.style.height = '400px';
 }
 
 // create a shrink function
 function shrink(e) {
-   e.target.parentNode.style.transition = 'height 0.5s linear 0s';
    e.target.parentNode.style.height = '50px';
 }
 
