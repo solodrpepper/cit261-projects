@@ -4,6 +4,7 @@ let div2ButtonOut = document.getElementById('div2ButtonOut');
 let resetBtn = document.getElementById('resetBtn');
 let div3BtnGrow = document.getElementById('div3BtnGrow');
 let div3BtnShrink = document.getElementById('div3BtnShrink');
+let divTransform = document.getElementById('transform');
 
 // div elements
 let div1 = document.getElementById('div1');
@@ -21,6 +22,7 @@ div2ButtonOut.addEventListener('click', fadeOut);
 resetBtn.addEventListener('click', resetDivs);
 div3BtnGrow.addEventListener('click', grow);
 div3BtnShrink.addEventListener('click', shrink);
+divTransform.addEventListener('click', mangleIt);
 
 // change the background color of a div
 function changeBG(e) {
@@ -53,6 +55,14 @@ function resetDivs() {
    // reset div 3
    div3.style.transition = 'height 0.5s linear 0s';
    div3.style.height = '50px';
+   // reset explanitory div
+   divTransform.style.transform = 'none';
+}
+
+function mangleIt() {
+   // I'm going to transform the heck out of this thing
+   divTransform.style.transform =
+      'skew(10deg, 30deg) rotate(180deg) translate(0px, -100px)';
 }
 
 window.addEventListener('load', () => {
