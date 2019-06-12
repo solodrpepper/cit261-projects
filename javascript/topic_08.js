@@ -54,3 +54,13 @@ function resetDivs() {
    div3.style.transition = 'height 0.5s linear 0s';
    div3.style.height = '50px';
 }
+
+window.addEventListener('load', () => {
+   let d1 = document.getElementById('div1');
+   let d2 = document.getElementById('div2');
+   let d3 = document.getElementById('div3');
+
+   d1.classList.add('div1');
+   d2.classList.add('div2');
+   d3.classList.add('div3');
+});
