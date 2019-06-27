@@ -8,12 +8,31 @@
       <!-- Stylesheet-->
       <link rel="stylesheet" type="text/css" href="../css/topic_09.css" />
 
-      <title>Topic #5</title>
+      <title>Topic #9</title>
    </head>
    <body id="grad1">
-      <header>Fluency Topic #5</header>
+      <header>Fluency Topic #9</header>
 
-      <!-- Make sure to include the Script for topic #5 -->
+      <!-- 
+         Plan for this page:
+            Have cards that cycle through and can be swiped and
+            then have to buttons that use touch to advance and 
+            onTouchEnd to go to previous
+      -->
+      <div>
+         <div id="tMove" class="grid card rounded_border">
+            <p>Tap and hold to move me</p>
+
+            <div id="tChange" class="card rounded_border">
+               <p>Tap me to change me</p>
+            </div>
+
+            <div id="tChangeRelease" class="card rounded_border">
+               <p>Tap and when you let go, watch me change</p>
+            </div>
+         </div>
+      </div>
+      <!-- Make sure to include the Script for topic #9 -->
       <script src="../javascript/topic_09.js"></script>
    </body>
 </html>
