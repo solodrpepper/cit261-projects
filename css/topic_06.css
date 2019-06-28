@@ -190,3 +190,8 @@ ul li {
 }
 
 tr:hover {background-color:#dddddd;}
+
+.delete {
+   background-color: red;
+   color: white;
+}

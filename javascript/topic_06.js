@@ -27,6 +27,9 @@ function addItem(e) {
    // Create del button element
    let deleteBtn = document.createElement('button');
 
+   // add delete class
+   deleteBtn.className = 'delete rounded_border';
+
    // Append text node
    deleteBtn.appendChild(document.createTextNode('X'));
 
@@ -49,6 +52,9 @@ function insertAtTheTop(e) {
 
    // Create del button element
    let deleteBtn = document.createElement('button');
+
+   // add delete class
+   deleteBtn.className = 'delete rounded_border';
 
    // Append text node
    deleteBtn.appendChild(document.createTextNode('X'));
