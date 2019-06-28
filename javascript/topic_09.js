@@ -3,12 +3,19 @@ let tMove = document.getElementById('tMove');
 let tChange = document.getElementById('tChange');
 let tChangeRelease = document.getElementById('tChangeRelease');
 
-// add some event listeners
+// add some event listeners for mobile
 tMove.addEventListener('touchstart', moveElementStart, false);
 tMove.addEventListener('touchmove', moveElement, false);
 tMove.addEventListener('touchend', moveElementEnd, false);
 tChange.addEventListener('touchstart', changeColor);
 tChangeRelease.addEventListener('touchend', changeTextColor);
+
+// add some event listeners for desktop
+tMove.addEventListener('mousedown', moveElementStart, false);
+tMove.addEventListener('drag', moveElement, false);
+tMove.addEventListener('mouseup', moveElementEnd, false);
+tChange.addEventListener('mousedown', changeColor);
+tChangeRelease.addEventListener('mouseup', changeTextColor);
 
 // needed variables (from https://www.kirupa.com/html5/drag.htm)
 active = false;
